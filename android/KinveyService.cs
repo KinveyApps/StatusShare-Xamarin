@@ -13,7 +13,7 @@ namespace AndroidStatusShare
 
 		public static Client getClient(){
 			if (client == null){
-				client = new Client.Builder("kid_W1YYO1eOv","16e676441fe54f9994e565f637e16a21")
+				client = new Client.Builder("MY_APP_KEY","MY_APP_SECRET")
 					.setLogger(delegate(string msg) { Console.WriteLine(msg);})
 					.build();
 			}
