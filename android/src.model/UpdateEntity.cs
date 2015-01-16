@@ -1,8 +1,8 @@
 ﻿using System;
 using RestSharp;
-using Newtonsoft.Json;
 using KinveyXamarin;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 using Android.Graphics;
 
 

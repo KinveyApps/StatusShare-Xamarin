@@ -42,11 +42,11 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
-    <Reference Include="LinqExtender">
-      <HintPath>..\packages\LinqExtender.3.0.1\lib\LinqExtender.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.6.0.6\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\..\..\klibs\Kinvey-Xamarin\packages\Newtonsoft.Json.6.0.8\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="LinqExtender">
+      <HintPath>..\..\..\..\klibs\Kinvey-Xamarin\packages\LinqExtender.3.0.1\lib\LinqExtender.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -61,8 +61,9 @@
     <Compile Include="src.fragments\UserFragment.cs" />
     <Compile Include="KinveyService.cs" />
     <Compile Include="src.component\UpdateAdapter.cs" />
-    <Compile Include="ExpressionVisitor.cs" />
     <Compile Include="src.fragments\UpdateEditFragment.cs" />
+    <Compile Include="ExpressionVisitor.cs" />
+    <Compile Include="DefaultContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -113,11 +114,15 @@
     <Folder Include="Resources\menu\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Kinvey-Xamarin\Kinvey-Xamarin.csproj">
+    <ProjectReference Include="..\..\..\..\klibs\Kinvey-Xamarin\Kinvey-Xamarin\Kinvey-Xamarin.csproj">
       <Project>{6644D98D-026B-48E9-95A3-61C4D98D82E7}</Project>
       <Name>Kinvey-Xamarin</Name>
     </ProjectReference>
-    <ProjectReference Include="..\RestSharp.Portable\RestSharp.Portable.csproj">
+    <ProjectReference Include="..\..\..\..\klibs\Kinvey-Xamarin\Kinvey-Utils\Kinvey-Utils.csproj">
+      <Project>{444456B1-5B55-48D6-9637-00ADCA92B7C9}</Project>
+      <Name>Kinvey-Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\klibs\Kinvey-Xamarin\RestSharp.Portable\RestSharp.Portable.csproj">
       <Project>{BA2352E1-CB07-4795-A2EB-F70720B2BBC9}</Project>
       <Name>RestSharp.Portable</Name>
     </ProjectReference>

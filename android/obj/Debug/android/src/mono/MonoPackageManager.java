@@ -68,9 +68,10 @@ public class MonoPackageManager {
 class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		"Android-StatusShare.dll",
-		"LinqExtender.dll",
 		"Newtonsoft.Json.dll",
+		"LinqExtender.dll",
 		"Kinvey-Xamarin.dll",
+		"Kinvey-Utils.dll",
 		"RestSharp.Portable.dll",
 		"System.Collections.Concurrent.dll",
 		"System.Collections.dll",
@@ -119,7 +120,8 @@ class MonoPackageManager_Resources {
 		"System.Xml.XDocument.dll",
 		"System.Xml.XmlSerializer.dll",
 		"SQLite.Net.dll",
-		"Kinvey-Utils.dll",
+		"SQLite.Net.Async.dll",
+		"ModernHttpClient.dll",
 		"System.Net.Http.Primitives.dll",
 		"Microsoft.Threading.Tasks.dll",
 	};

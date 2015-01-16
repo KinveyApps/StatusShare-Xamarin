@@ -1,7 +1,8 @@
-/Users/edward/code/klibs/Kinvey-Xamarin/Android-StatusShare/bin/Debug/Android-StatusShare.dll
+/Users/edward/code/ksamples/xamarin/StatusShare-Xamarin/android/bin/Debug/Android-StatusShare.dll
+/Users/edward/code/klibs/Kinvey-Xamarin/packages/Newtonsoft.Json.6.0.8/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll
 /Users/edward/code/klibs/Kinvey-Xamarin/packages/LinqExtender.3.0.1/lib/LinqExtender.dll
-/Users/edward/code/klibs/Kinvey-Xamarin/packages/Newtonsoft.Json.6.0.6/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll
 /Users/edward/code/klibs/Kinvey-Xamarin/Kinvey-Xamarin/bin/Debug/Kinvey-Xamarin.dll
+/Users/edward/code/klibs/Kinvey-Xamarin/Kinvey-Utils/bin/Debug/Kinvey-Utils.dll
 /Users/edward/code/klibs/Kinvey-Xamarin/RestSharp.Portable/bin/Debug/RestSharp.Portable.dll
 /Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/Facades/System.Collections.Concurrent.dll
 /Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/Facades/System.Collections.dll
@@ -49,7 +50,8 @@
 /Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/Facades/System.Xml.ReaderWriter.dll
 /Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/Facades/System.Xml.XDocument.dll
 /Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/Facades/System.Xml.XmlSerializer.dll
-/Users/edward/code/klibs/Kinvey-Xamarin/Android-StatusShare/bin/Debug/SQLite.Net.dll
-/Users/edward/code/klibs/Kinvey-Xamarin/Kinvey-Xamarin/bin/Debug/Kinvey-Utils.dll
-/Users/edward/code/klibs/Kinvey-Xamarin/Android-StatusShare/bin/Debug/System.Net.Http.Primitives.dll
-/Users/edward/code/klibs/Kinvey-Xamarin/Android-StatusShare/bin/Debug/Microsoft.Threading.Tasks.dll
+/Users/edward/code/ksamples/xamarin/StatusShare-Xamarin/android/bin/Debug/SQLite.Net.dll
+/Users/edward/code/ksamples/xamarin/StatusShare-Xamarin/android/bin/Debug/SQLite.Net.Async.dll
+/Users/edward/code/ksamples/xamarin/StatusShare-Xamarin/android/bin/Debug/ModernHttpClient.dll
+/Users/edward/code/ksamples/xamarin/StatusShare-Xamarin/android/bin/Debug/System.Net.Http.Primitives.dll
+/Users/edward/code/ksamples/xamarin/StatusShare-Xamarin/android/bin/Debug/Microsoft.Threading.Tasks.dll

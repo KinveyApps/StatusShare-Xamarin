@@ -119,19 +119,25 @@ namespace AndroidStatusShare
 			return base.OnOptionsItemSelected(item);
 		}
 
-		public void doUpdate(){
+		public void doUpdate ()
+		{
 			entity.text = updateText.Text;
-			entity.author = new KinveyReference<KinveyXamarin.User> ("user", KinveyService.getCurrentUserId());
+			entity.author = new KinveyReference<KinveyXamarin.User> ("user", KinveyService.getCurrentUserId ());
 
-			byte[] bytes;
-			using (var stream = new MemoryStream())
-			{
-				((StatusShare)Activity).bitmap.Compress(Bitmap.CompressFormat.Png, 0, stream);
-				bytes = stream.ToArray();
-			}
+			//byte[] bytes;
+			//using (var stream = new MemoryStream())
+			//{
+			//	((StatusShare)Activity).bitmap.Compress(Bitmap.CompressFormat.Png, 0, stream);
+			//	bytes = stream.ToArray();
+			//}
+
+			//((StatusShare)Activity).bitmap.
+
+			var	stream = new MemoryStream ();
+			((StatusShare)Activity).bitmap.Compress(Bitmap.CompressFormat.Png, 0, stream);
 				
 
-			KinveyService.saveUpdate (entity, bytes, new KinveyXamarin.KinveyDelegate<UpdateEntity>(){
+			KinveyService.saveUpdate (entity, stream, new KinveyXamarin.KinveyDelegate<UpdateEntity>(){
 
 				onSuccess =  (update) => { 
 					Activity.RunOnUiThread (() => {
