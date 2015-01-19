@@ -53,18 +53,16 @@ namespace AndroidStatusShare
 			KinveyService.getUpdates (new KinveyDelegate<UpdateEntity[]>{ 
 				onSuccess =  (updates) => { 
 					this.Activity.RunOnUiThread (() => {
-
 						((StatusShare)this.Activity).shareList = updates;
 						setAdapter();
 
+
+
 					});
 
-
+	
 				},
-				onError = (error) => {
-				
-				
-				}
+				onError = (error) => {}
 			});
 
 
@@ -84,6 +82,14 @@ namespace AndroidStatusShare
 					((StatusShare)this.Activity).ReplaceFragment( UpdateDetailsFragment.newInstance((StatusShare)this.Activity, e.Position), true);
 
 				};
+
+//				for (int i = 0; i < adapter.Count; i++){
+//					adapter.GetItem (i).loadThumbnail (this.Activity, KinveyService.getClient (), adapter);
+//				}
+
+				foreach (UpdateEntity update in  ((StatusShare)this.Activity).shareList){
+					update.loadThumbnail(this.Activity, KinveyService.getClient(), adapter);
+				}
 			}
 		}
 			

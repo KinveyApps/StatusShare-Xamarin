@@ -46,7 +46,8 @@ namespace AndroidStatusShare
 			AsyncAppData<UpdateEntity> appData = getClient().AppData<UpdateEntity> (update_collection, typeof(UpdateEntity));
 
 			FileMetaData fm  = new FileMetaData();
-			fm.acl = entity.acl;
+			fm.acl = new AccessControlList ();
+			fm.acl.globallyReadable = true;
 			fm._public = true;
 
 			getClient().File().upload(fm, bytes, new KinveyDelegate<FileMetaData>{ 

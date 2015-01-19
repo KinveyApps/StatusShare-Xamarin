@@ -4,6 +4,8 @@ using KinveyXamarin;
 using System.Collections.Generic;
 using Newtonsoft.Json;
 using Android.Graphics;
+using System.IO;
+using Android.App;
 
 
 namespace AndroidStatusShare
@@ -70,6 +72,34 @@ namespace AndroidStatusShare
 			Bitmap resizedBitmap = BitmapFactory.DecodeFile(fileName, options);
 
 			return resizedBitmap;
+		}
+
+		public void loadThumbnail(Activity act, Client c, UpdateAdapter adapter){
+
+			Stream output = new MemoryStream();
+
+			c.File ().download (new FileMetaData (attachement.id), output, new KinveyDelegate<FileMetaData>{
+			
+				onSuccess =  (meta) => { 
+					BitmapFactory.Options options = new BitmapFactory.Options();
+					options.InSampleSize = 4;
+
+					Bitmap ret = BitmapFactory.DecodeStream (output, new Rect (), options);//(output, 0, outarray.Length, options);
+
+					this.thumbnail = ret;
+
+					act.RunOnUiThread (() => {
+
+						adapter.NotifyDataSetChanged();
+
+					});
+				}
+			
+			
+			});
+
+
+
 		}
 
 
